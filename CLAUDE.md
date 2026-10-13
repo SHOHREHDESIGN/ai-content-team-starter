@@ -17,6 +17,10 @@ asks for another language.
 
 Workers run on Sonnet. Keep orchestration light and hand the work to the agents.
 
+**Outside the chain:** `social-media-marketer` helps with the profile itself (bio, and which
+posts work based on numbers the human pastes in). Call it only when the human asks about their
+bio or profile. It does not take part in the content chain below.
+
 ## The chain (always in this order)
 
 1. **Brief.** Restate the request in 3 lines: topic, platform and format, source of facts.

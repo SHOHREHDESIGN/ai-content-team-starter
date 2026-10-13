@@ -7,6 +7,9 @@ verified facts into a social-media hook and caption.
 and caption in your brand voice → **QA reviewer** checks the draft against the facts before
 you see it.
 
+Bonus: a **Social Media Marketer** that looks at your profile as a whole. It helps you set
+up your bio and shows you which of your posts work and which do not, based on your own numbers.
+
 The kit includes a fictional example brand with offline facts, so you can run the whole
 chain in a few minutes without writing anything first.
 
@@ -16,7 +19,7 @@ Prefer a visual walkthrough? Open the [Starter Kit Guide (PDF)](Starter-Kit-Guid
 
 ```
 CLAUDE.md                      instructions for the orchestrator (your main Claude Code session)
-.claude/agents/                researcher, copywriter, qa-reviewer (all run on Sonnet)
+.claude/agents/                researcher, copywriter, qa-reviewer, plus social-media-marketer (all run on Sonnet)
 .claude/skills/plain-voice/     plain everyday wording, short sentences, no hype
 .claude/skills/hook-writer/    five hook candidates from facts, using six patterns
 brand/voice.md                 your brand voice template (fill this in)
@@ -53,6 +56,18 @@ post them yourself.
    You get a hook, a caption, a fact map and a QA verdict, saved in `output/`. Compare it with
    `examples/sample-output.md`. The first run uses a neutral fallback tone and tells you so.
 
+## Your profile: bio and what works
+
+Ask Claude Code, for example:
+```
+Use the social media marketer to rewrite my bio. Here is my current bio: ...
+```
+or paste your last 12 posts (date, format, topic, views, likes, saves, shares) and ask:
+```
+Use the social media marketer: which of these posts work, which don't, and why?
+```
+It only uses what you paste in. It does not log into Instagram.
+
 ## Make it yours
 
 1. Open `brand/voice.md`, fill in the sections, and change the first line to
@@ -75,7 +90,7 @@ If you do not give the team a source of facts, it asks you for one. It does not 
 
 ## Get the full system
 
-This kit is three agents. Our full team has more than twenty: design, video, sound,
+This kit is four agents. Our full team has more than twenty: design, video, sound,
 automation, scheduling and a quality gate, all trained on our own craft and run for you.
 
 Want the full system, done for you? Send us a DM with the word FULL on Instagram:

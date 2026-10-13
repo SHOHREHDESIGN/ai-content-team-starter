@@ -10,6 +10,8 @@ you see it.
 The kit includes a fictional example brand with offline facts, so you can run the whole
 chain in a few minutes without writing anything first.
 
+Prefer a visual walkthrough? Open the [Starter Kit Guide (PDF)](Starter-Kit-Guide.pdf).
+
 ## What is in the box
 
 ```
